@@ -1,0 +1,57 @@
+@charset "utf-8";
+
+*{padding: 0;margin: 0;font-family: "微软雅黑";outline: none;box-sizing: border-box;font-weight: normal;}
+img{border: none;}
+.template{padding: 65px 0 75px 0;width: 100%;overflow: hidden;background: url(../img/explore/logo.png) no-repeat;background-size: 100% 100%;}
+.title{font-size: 28px;text-align: center;color: #333;}
+.subtitle{font-size: 16px;margin-top: 20px;text-align: center;color: #777;}
+.category{text-align: center;}
+.category ul{overflow: hidden;margin-top: 40px;background-color: #fff; box-shadow: 0 0 4px rgba(0,0,0,0.1); border-radius: 3px;display: inline-block;}
+.category ul li{display: inline-block;font-size: 16px;height: 35px;line-height: 35px;width: 140px;text-align: center;position: relative; cursor: pointer;}
+.category ul li:after{content: '';height: 50%; border-left: 1px solid #eee; position: absolute; right: 0; top: 25%;}
+.category ul li:last-child:after{border-left: none;}
+.category ul li:hover{color: #8b766c;;}
+.category ul li.active{background:#8b766c;;color: #fff;}
+.category ul li.active:after{border-left: none;}
+.content{
+  width: 100%;
+  height: auto;
+  margin: 60px auto 60px;
+  display: none;
+}
+.content.active{display: block;}
+.content ul{width: 1160px;margin: 0 auto;}
+.content ul::after{
+  content:"";
+  display: block;
+  clear: both;
+}
+.content ul li{
+  float: left;
+  position: relative;
+  width: 200px;
+  margin-right: 40px;
+  transition: transform .3s ease,box-shadow .3s ease}
+.content ul li:last-child{margin-right: 0;}
+.content ul li .img{width: 100%;}
+.content ul li .bg{transition: opacity .3s;position: absolute;top: 0;left: 0;width: 100%;height: 100%;background: rgba(0,0,0,0);text-align: center;}
+.content ul li .bg img{display: inline-block;width: 70%;margin-top: 75px;border-radius: 3px;opacity: 0;transition: opacity .5s;}
+.content ul li:hover{transform: translate3d(0,-10px,0)}
+.content ul li:hover .bg{background: rgba(0,0,0,.5);}
+.content ul li:hover .bg img{opacity: 1;}
+.content .more{text-align: center;width: 100%;clear: both;padding-top: 60px;}
+.content .more a{display: inline-block;border: 1px solid #f73;color: #f73; transition: background-color .3s,color .3s;padding: 12px 50px;border-radius: 50px;font-size: 18px;}
+.content .more a:hover{background: #f73;color: #fff;}
+.content.wsc ul{width: 1245px;}
+.content.wsc ul li{background:url(../images/phone.png) center center no-repeat;width: 217px;height: 450px;}
+.content.wsc ul li .img{margin-top: 44px;margin-left: 9px;}
+.content.wsc ul li .bg{width: 200px;height: 356px;left: 9px;top: 44px;}
+.content.wsc ul li .bg img{border-radius: 3px;border:10px solid #fff}
+.content.dnsc ul{width:1200px}
+.content.dnsc ul li{background:url(../images/pc.png) center center no-repeat;width: 340px;height: 220px;overflow: hidden;margin-right: 90px;}
+.content.dnsc ul li:nth-child(1),.content.dnsc ul li:nth-child(2),.content.dnsc ul li:nth-child(3){margin-bottom: 40px;}
+.content.dnsc ul li:nth-child(3n){margin-right: 0;}
+.content.dnsc ul li .img{margin-top: 13px;}
+.content.dnsc ul li .img img{max-width: 100%;}
+.content.dnsc ul li .bg{width: 100%;height: 100%;top: 13px;}
+.content.dnsc ul li .bg img{width: 145px;margin-top: 90px;}

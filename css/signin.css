@@ -1,0 +1,194 @@
+@charset "utf-8";
+/*头部*/
+#w1360{
+  width:1360px;
+  margin:0 auto;
+  padding:15px 12px 12px 12px;
+  border-bottom:1px solid #666;
+}
+#w1360::after{
+  content:"";
+  display:block;
+  clear:both;
+}
+.dr_fl{
+  float:left;
+}
+.dr_fl img{width:70px;}
+.dr_fr{float:right;margin-top:20px;}
+.dr_fr ul li{
+  float:left;
+  height:20px;
+}
+.dr_fr ul .fr_first a{
+  background: #8b766c;
+  padding:2px 16px;
+  color:#fff;
+  text-align: center;
+}
+.fr_first,.fr_second{margin-right:15px;}
+.fr_second a{
+  font-size:12px;
+  color:#8d8d8d;
+
+}
+.fr_second img{
+  position: relative;
+  top:4px;
+}
+.fr_third{position: relative;}
+.fr_third a{
+  font-size: 12px;
+  color: #8d8d8d;
+}
+.fr_third img{
+  position: absolute;
+  top:8px;
+  right:-10px;
+}
+/*banner*/
+.dr_banner{
+  position: relative;
+  width:1360px;
+  margin:0 auto;
+}
+.dr_card{
+  position: absolute;
+  width:312px;
+  height:382px;
+  top:60px;
+  right:100px;
+  background:#fff;
+   box-shadow:1px 2px 5px 4px #ccc;
+}
+.dr_card h3{
+  height: 38px;
+  font-size: 18px;
+  color: #9b745c;
+  font-family: "microsoft yahei";
+  text-align: center;
+  line-height: 38px;
+  margin-top: 14px;
+}
+.signin_box{
+  width:254px;
+  margin:0 auto;
+}
+.dr_card input.iptxt{
+  width: 254px;
+  height: 36px;
+  border: 1px solid #e6e6e6;
+  padding-left:38px;
+  border-radius: 4px;
+  color: #e7e7e7;
+  background:url(../img/ico-uinput.png) no-repeat 14px 9px;
+}
+.dr_card input.inputCode{
+  float:left;
+  width:145px;
+  margin-top:10px;
+}
+.signin_box a.getCodebtn{
+  float:right;
+  width:105px;
+  height: 36px;
+  line-height: 36px;
+  border: 1px solid #e6e6e6;
+  margin-top:10px;
+  text-align: center;
+  border-radius: 4px;
+  color: #9b745c;
+}
+/*鼠标触碰焦点*/
+/*开始时临时隐藏提示div*/
+.vali_info{
+  display:none;
+}
+/*验证通过时div的样式*/
+.vali_success{
+  background:url("../img/ok.png") no-repeat 4px center;
+  border: 1px solid #ff7373;
+  padding: 4px 0 4px 25px;
+  color: #666;
+  font-size: 12px;
+  line-height: 16px;
+}
+.vali_fail{
+  background:yellow url(../img/ico-error.png) no-repeat 4px center;
+  border: 1px solid #ff7373;
+  padding: 4px 0 4px 25px;
+  color: red;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.signin_box p.dr_action{
+  padding-top:15px;
+  font-size: 12px;
+  color: #000;
+  text-align: center;
+}
+.dr_action a{
+  color: #9b745c !important;
+  text-decoration: underline;
+}
+.dr_action i{
+  font-style: inherit;
+  color: #9b745c
+}
+.checkitems{
+  font-size:12px;
+  margin-top:20px;
+  text-align: center;
+}
+.checkitems input.phonecheck{
+  position: relative;;
+  top:3px;
+}
+.dr_login{
+  width:254px;
+  margin:15px auto 0;
+}
+.dr_login a{
+  display:block;
+  width: 246px;
+  height: 38px;
+  text-align: center;
+  line-height:38px;
+  margin-top: 10px;
+  cursor: pointer;
+  font-size:14px;
+}
+.dr_login a.log_btn{
+  border: 1px solid #8b766c;
+  color: #8b766c;
+}
+.otherLogin{
+  width:100%;
+  background:url(../img/otherLoginHr.png) no-repeat;
+  margin-top:45px;
+  text-align: center;
+}
+.otherLogin h4{
+  position: relative;
+  text-align: center;
+  color: #9b745c;
+  font-size: 12px;
+  top:-7px;
+}
+.otherLogin a{
+  display:inline-block;
+  width: 21px;
+  height: 16px;
+  vertical-align: middle;
+  margin:7px 8px 0;
+  background: url(../img/ico-otherLogin.png) no-repeat;
+}
+.otherLogin a.qq{background-position:0 0;}
+.otherLogin a.qq:hover{background-position: 0 -27px;}
+.otherLogin a.wx{background-position:-42px 0;}
+.otherLogin a.wx:hover{background-position:-42px -27px;}
+.otherLogin a.wb{background-position:-87px 0;}
+.otherLogin a.wb:hover{background-position:-87px -27px;}
+.otherLogin a.zf{background-position:-130px 0;}
+.otherLogin a.zf:hover{background-position:-130px -27px;}

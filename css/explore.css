@@ -1,0 +1,250 @@
+@charset "utf-8";
+/*白色底面包屑*/
+.dr_bread{
+  border-top: 1px solid #666;
+}
+.w1360{
+  width:1360px;
+  margin:0 auto;
+}
+.dr_bread .bread_nav{
+  color: #333;
+  margin-left: 9px;
+  height: 70px;
+  line-height: 70px;
+}
+.dr_bread .bread_nav a,.dr_bread .bread_nav span{
+  font-size: 13px;
+  color: #333;
+  padding-left: 6px;
+}
+.dr_bread .bread_nav a:hover,.dr_bread .bread_nav .s1:hover{
+  color: #9b745c;
+}
+/*banner链接*/
+.dr_interlink{
+  height:500px;
+  overflow:hidden;
+}
+/*图片内容区*/
+.drpic_all{
+  margin-top:20px;
+  background:#eee;
+  padding-top:30px;
+}
+.drpic_bread{
+  padding-bottom:30px;
+  text-align:center;
+}
+.drpic_bread a.active{
+  color: #c57d5c;
+}
+.drpic_bread a:hover{color: #c57d5c;}
+.drpic_bread a{
+  display:inline-block;
+  padding:5px 8px;
+  margin-right:56px;
+  text-align:left;
+  font-weight: bold;
+  font-size:20px;
+  color:#666;
+}
+
+.drpic_all .container{
+  position: relative;
+  display:inline-block;
+  padding:34px 0 60px 0;
+  border:1px solid #fff;
+}
+
+/*加载到新的ul.list里面*/
+.moreload{
+  width: 1360px;
+  height: auto;
+  margin:0 auto;
+  overflow: hidden;
+}
+.moreload .list{
+  overflow: hidden;
+  text-align: center;
+  padding-left:50px;
+  margin-left:46px;
+  padding-bottom:30px;
+  border-bottom: 1px solid #fff;
+}
+.moreload ul.list li{
+  position: relative;
+  float: left;
+  background:#fff;
+  width:355px;
+  height:403px;
+  margin:0 0 32px 17px;
+}
+.moreload ul.list .hreflink{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity:.1;
+  background: #fff;
+  z-index: 2;
+  left: 0;
+  top: 0;
+}
+.moreload ul.list .hreflink:hover{background:pink;opacity:.4;}
+.moreload ul.list .drfans_listtop{
+  position: relative;
+  width:100%;
+  height:200px;
+  overflow: hidden;
+}
+.moreload ul.list img{
+  position: absolute;
+  width:100%;
+  height:auto;
+  top:50%;
+  margin-top:-100px;
+  margin-left:-177px;
+}
+.moreload ul.list .drfans_word{
+  position: relative;
+  text-align: center;
+  padding:26px 0 15px;
+  z-index: 99;
+}
+.moreload ul.list h3{
+  font-size: 14px;
+  color: #000;
+  padding: 0 24px;
+  margin-bottom: 6px;
+}
+.moreload ul.list p{
+  width:355px;
+  padding: 0 52px;
+  height: 52px; 
+  font-size: 12px;
+  color: #aaa;
+  line-height: 18px;
+  overflow: hidden;
+}
+.drpic_list{
+  padding-left: 130px;
+  padding-bottom: 52px;
+  border-bottom: 1px solid #fff;
+  margin-left: -28px;
+  overflow:hidden;
+}
+.drpic_list::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+.nov_line{
+  width: 20px;
+  height: 1px;
+  border-bottom: 1px solid #ababab;
+  margin: 13px auto 6px;
+}
+
+.container .drfans_word h3:hover,.container .drfans_word p:hover{
+  color:#a98f83;
+}
+.drfans_bottom{
+  padding:8px 0 25px 0;
+  text-align: center;
+}
+.drfans_bottom span{
+  font-size: 12px;
+  color: #a98f83;
+  margin: 0 20px;
+  padding: 5px 10px;
+  display: inline-block;
+  height: 38px;
+  vertical-align: middle;
+}
+.drfans_bottom i{
+  display:inline-block;
+  background:url(../img/explore/icon_heart.png) no-repeat left center;
+  height: 28px;
+  line-height: 28px;
+  padding-left: 32px;
+}
+
+/*图片先隐藏*/
+.moreload .hidden{display:none;}
+.moreload .more .load_more{
+  position: absolute;
+  display:inline-block;
+  width:150px;
+  height:40px;line-height:40px;
+  left:50%;margin-left:-58px;
+  bottom:43px;
+  border:1px solid #656565;
+  text-align: center;
+  font-size:16px;
+  color:#656565;
+  z-index: 2;
+}
+.container .load_more:hover{
+  background:#a98f83;
+  color:#fff;
+  border:0;
+}
+.disappear{display:none;}
+.appear{display:block;}
+
+
+/*原先ul里的样式*/
+/*
+.drpic_list li{
+  position: relative;
+  float: left;
+  background:#fff;
+  width:355px;
+  height:403px;
+  margin:0 0 32px 17px;
+}
+.drpic_list .hreflink{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity:.1;
+  background: #fff;
+  z-index: 2;
+  left: 0;
+  top: 0;
+}
+.drpic_list .drfans_listtop{
+  position: relative;
+  width:100%;
+  height:200px;
+  overflow: hidden;
+}
+.drfans_listtop img{
+  position: absolute;
+  width:100%;
+  height:auto;
+  top:50%;
+  margin-top:-111px;
+}
+.drfans_word{
+  position: relative;
+  text-align: center;
+  padding:26px 0 15px;
+  z-index: 99;
+}
+.drfans_word h3{
+  font-size: 14px;
+  color: #000;
+  padding: 0 24px;
+  margin-bottom: 6px;
+}
+.drfans_word p{
+  width:355px;
+  padding: 0 52px;
+  height: 52px; 
+  font-size: 12px;
+  color: #aaa;
+  line-height: 18px;
+  overflow: hidden;
+}
+*/

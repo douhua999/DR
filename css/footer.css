@@ -1,0 +1,174 @@
+@charset "utf-8";
+#dr_footer{
+    background:#fff;
+    margin-top:50px;
+}
+
+.dr_footertop{
+    background: url(../img/footer_rp.png) repeat-x;
+    height:16px;
+}
+.dr_footericon{
+    padding:30px 0;
+}
+.dr_footericon::after{
+    content:"";
+    display:block;
+    clear: both;
+}
+.w1200{
+    width:1200px;
+    margin:0 auto;
+}
+.dr_footericon{
+    padding:30px 0;
+}
+.dr_footericon li{
+    float: left;
+    width:86px;
+    text-align:center;
+    margin:0 31px;
+}
+.dr_footericon i{
+    background-image:url(../img/icon_footer.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+    width:60px;
+    height:60px;
+}
+.footer_icon1{
+    background-position: 0 0;
+}
+.footer_icon2{
+    background-position:-60px 0;
+}
+.footer_icon3{
+    background-position:-60px 0;
+}
+.footer_icon4{
+    background-position:-120px 0;
+}
+.footer_icon5{
+    background-position:-180px 0;
+}
+.footer_icon6{
+    background-position:-240px 0;
+}
+.footer_icon7{
+    background-position:-300px 0;
+}
+.footer_icon8{
+    background-position:-360px 0;
+}
+
+.dr_footericon a,.dr_footericon span{
+    display: block;
+    color:#666;
+    font-size:14px;
+}
+.dr_footericon span{
+    margin-top:10px;
+}
+/*底部第一部分*/
+.dr_tint{
+    background:#f7f7f7;
+    padding-top:50px;
+}
+.dr_tint .w1200{padding-bottom:50px;}
+.dr_tint .dr_service{
+    font-size:12px;
+    line-height: 22px;
+}
+.dr_service::after{
+    content:"";
+    display: block;
+    clear: both;
+}
+.dr_service li:first-child{
+    border:none;
+    margin-left:12px;
+}
+.dr_service h4{
+    font-weight: bold;
+    color: #666;
+    font-size: 15px;
+}
+.dr_service a{text-align:center;}
+.dr_tint ul li{
+    float: left;
+    padding:6px 54px;
+    border-left: 2px solid #dbdbdb;
+}
+.dr_tint ul li a{
+   display: block;
+   color:#666;
+}
+.drfocus{
+    text-align: center;
+    margin-top:28px;
+}
+.drfocus p{
+    font-size:12px;
+    margin-bottom: 18px;
+    color:#666;
+    margin-top:16px;
+}
+.drfocus a{
+    display: inline-block;
+    background: url(../img/share_focus.png);
+    width: 44px;
+    height: 44px;
+    margin: 0 15px;
+}
+.drfocus .wechat{position: relative;}
+.drfocus .wechat img {
+    display: none;
+    position: absolute;
+    right: 56px;
+    top:-20px;
+}
+.drfocus .wechat:hover {
+    background-position: 0 -53px;
+}
+.drfocus .wechat:hover img{
+    display: block;
+    width: 180px;
+}
+.drfocus .weibo {
+    background-position: -44px 0;
+}
+
+.drfocus .weibo:hover {
+    background-position: -44px -53px;
+}
+.dr_declare{
+    height: 70px;
+    background: #868686;
+    font-family: SimSun;
+    line-height: 70px;
+}
+.w1360{
+    width:1360px;
+    margin:0 auto;
+}
+.fl{float: left;}
+.dr_languages{
+    position: relative;
+    font-size: 0;
+    height: 70px;
+    margin-left: 50px;
+}
+.dr_languages a{
+    color: #c2c2c2;
+    margin-left:20px;
+}
+.fr{float:right;}
+.dr_item a{
+    color:#c2c2c2;
+}
+.dr_item img {
+    width: 68px;
+    vertical-align: middle;
+    margin-left: 8px;
+    margin-top:23px;
+}

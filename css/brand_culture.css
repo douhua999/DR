@@ -1,0 +1,401 @@
+@charset "utf-8";
+/*第一块*/
+.w1360{
+  width:1360px;
+  margin:0 auto;
+}
+.drbrand_p1{
+  position: relative;
+  padding-bottom:10px;
+  z-index:0;
+}
+.drbrand_p1 .brword{
+  position: absolute;
+  right:100px;
+  top:50%;
+}
+.drbrand_p1 .brword h3{
+  font-size: 28px;
+  color: #4e3b35;
+  margin-bottom: 18px;
+}
+.brword p{
+  font-size: 14px;
+  line-height: 26px;
+}
+.brword{text-align: center;}
+.drbrand_p1 .brword p{
+  color: #8b766c;
+  font-size: 16px;
+  line-height: 28px;
+}
+.brword .brandline{
+  width:21px;
+  height:2px;
+  border-bottom: 2px solid #898079;
+  margin:26px auto 0;
+}
+/*第二块*/
+.drbrand_p2,.drbrand_p5{
+  position: relative;
+  padding-bottom:10px;
+}
+.drbrand_p2 .brword{
+  position: absolute;
+  width:450px;
+  left:0;
+  top:70px;
+}
+.drbrand_p2 .brword p{
+  color: #626262;
+  margin-top: 40px;
+}
+/*第三块*/
+.drbrand_p3{
+  position: relative;
+  padding-bottom:10px;
+}
+.drbrand_p3 .brword{
+  position: absolute;
+  width:450px;
+  right:0;
+  top:70px;
+}
+.drbrand_p3 .brword p{
+  color:#6f5b52;
+  margin-top: 40px;
+}
+.drbrand_p2 .brword .brandline,.drbrand_p3 .brword .brandline{
+  width: 40px;
+  height: 2px;
+}
+/*第四块*/
+.drbrand_p4{
+  background-color:#f1f1f1;
+  padding-bottom: 50px;
+}
+.drbrand_p4::after{
+  content: "";
+  display:block;
+  clear: both;
+}
+.drbrand_p4 .fl{float: left;}
+.drculture_left img{margin:50px 0 0 90px;}
+/*第四块右边上半部分*/
+.drbrand_p4 .fr{float:right;}
+.drculture_right{
+  margin:80px 100px 0 0;
+  text-align: center;
+}
+.drculture_right .right_word h3{
+  font-size: 28px;
+  color: #666;
+  margin-bottom: 30px;
+}
+.drculture_right .right_word h4{
+  width: 476px;
+  margin: 0 auto;
+  background:url(../img/line.png) repeat-x bottom center;
+  font-family: SimSun;
+  font-size: 19px;
+  color: #c57d5c;
+  padding-bottom: 13px;
+}
+.right_word h4 a{
+  font-size:18px;
+  color: #c57d5c;
+}
+.right_word p{
+  font-size: 15px;
+  color: #666;
+  line-height: 32px;
+  margin-top: 30px;
+}
+/*下半部分*/
+.formsame{
+  position: relative;
+  text-align: left;
+  margin-top: 20px;
+}
+.formsame .drmember_yz-word{
+  top: 80px;
+  margin-left: 0;
+  left: 66px;
+  
+}
+/*第五块*/
+.drbrand_p5{
+  position: relative;
+  padding-top:10px;
+  height:722px;
+}
+  .drbrand_p5::after{
+    content:"";
+    display:block;
+    clear: both;
+  }
+.drbrand_p5 .brword_fl{
+  width: 451px;
+  height: 722px;
+  text-align: center;
+  padding-top: 150px;
+  background: #d5ccc3;
+}
+.drbrand_p5 .brword_fl h3{
+  font-size: 27px;
+  color: #4e3b35;
+  margin-top: 40px;
+}
+.drbrand_p5 .brword_fl p{
+  color: #8b766c;
+  font-size: 16px;
+  line-height: 26px;
+  margin-top: 20px;
+}
+.brword_fl .brandline{
+  border-bottom: 2px solid #898079;
+  width: 40px;
+  height: 2px;
+  margin: 26px auto 0;
+}
+.moregift{
+  display: block;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #000;
+}
+.brword_fr{position: relative;}
+.brword_fr .brand_list{
+  position: relative;
+  width: 909px;
+  height: 722px;
+  overflow: hidden;
+}
+.brword_fr .brand_list li{
+  position: absolute;
+  left:0;
+  top:0;
+  width:100%;
+}
+.brword_fr .brand_list li img{width:100%;}
+.brandlb_xd {
+  position: relative;
+  display:inline;
+  text-align: center;
+  left: 50%;
+  margin-left:-86px;
+  bottom: 64px;
+  z-index: 5;
+}
+.brandlb_xd li {
+  display: inline-block;
+  background: url(../img/explore/dian.png) no-repeat;
+  width: 15px;
+  height: 15px;
+  margin-left:20px;
+  border-radius:50%;
+  background-color:rgb(167, 165, 165);
+}
+.brandlb_xd li:hover{background-color:#8b766c;}
+/*第六块
+.drbrand_lb{
+  width: 1360px;
+  height: 661px;
+  margin-bottom:10px;
+}
+.drbrand_lb .brand_word{
+  position: absolute;
+  width: 418px;
+  right: 212px;
+  top: 272px;
+  text-align: center;
+  z-index: 4;
+}
+.brand_word h3{
+  font-size: 28px;
+  color: #b49777;
+}
+.brand_word p{
+  font-size: 16px;
+  color: #352a24;
+  line-height: 26px;
+  margin-top: 18px;
+}
+.drbrand_lb .brand_word .brandline{ 
+    width: 40px;
+    height: 2px;
+    border-bottom: 2px solid #898079;
+    margin:26px auto 0;
+  }
+  .brand_circle{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    left: 0;
+    bottom: 32px;
+    z-index: 5;
+  }
+  .brand_circle li{
+    display: inline-block;
+    background: url(../img/culture/dian.png);
+    width: 9px;
+    height: 9px;
+    margin: 0 10px;
+  }
+  */
+/*定制每层楼中每张商品图片的大小*/
+#main>div:nth-child(2)>h3>div:nth-child(2)>div:first-child img{
+  margin-left:-200px; 
+  height: 250px;
+}
+#main>div:nth-child(2)>h3>div:nth-child(2)>div:last-child img{
+  margin-left:-150px; 
+  height: 200px;
+}
+#main>div:nth-child(2)>h3>div:nth-child(3)>div:first-child img{
+  margin-left:-100px; 
+  height: 150px;
+}
+#main>div:nth-child(2)>h3>div:nth-child(3)>div:first-child img{
+  margin-left:-100px; 
+  height: 150px;
+}
+#main>div:nth-child(2)>h3>div:nth-child(3)>div:last-child .card-img-top{
+  height:95px;
+}
+#main>div:nth-child(2)>h3>div:nth-child(3)>div:last-child .card-body>span:first-child{
+  font-size:.2em;
+}
+/*定制每张商品卡片的背景色*/
+#main>div:nth-child(2)>h3 .card{
+  background-color:#e8e8e8;
+}
+/*定制电梯按钮的样式*/
+#main>.btn-group-vertical{
+  top:100px;
+  left:10px;
+}
+#main>.btn-group-vertical>.btn-secondary:hover {
+  background-color: #e4393c;
+  border-color: #e4393c;
+}
+/*
+.drbrand_p6{
+  position: relative;
+}
+.drbrand_p6 .carousel-indicators{position: absolute;}
+.drbrand_p6 .carousel-indicators li{background-color:gray;}
+.drbrand_p6 .carousel-indicators li:hover{background-color:red;}
+*/
+.drbrand_p6{padding-top:10px;clear: both;}
+
+/*第八块*/
+.drbrand_p8{
+  position: relative;
+  padding:0 0 80px 0;
+}
+.drbrand_p8 img{margin-top:10px;}
+.drbrand_p8 .brword{
+  position: absolute;
+  left:50%;
+  margin-left:-250px;
+  top:80%;
+  background: #8b766c;
+  font-size: 30px;
+  color: #fff;
+  width: 500px;
+  height: 120px;
+  line-height:120px;
+  text-align: center;
+}
+.brword a{
+  padding: 18px 32px;
+  color: #fff;
+  border: 2px solid #fff;
+  font-size:100%;
+}
+.drmember_yz-word{
+  position: absolute;
+  background: url(../img/yzts_word.png) no-repeat;
+  width: 346px;
+  height: 69px;
+  text-align: center;
+  font-size: 12px;
+  color: #949292;
+  bottom: -70px;
+  right: 0;
+  z-index: 5;
+}
+.formsame .drmember_yz-word p{
+    font-size: 12px;
+    line-height: 20px;
+    font-family: SimSun;
+    width: 330px;
+    margin: 16px auto 0;
+}
+.formsame p{
+  line-height: 44px;
+  font-size:0;
+}
+.formsame label{
+  display: inline-block;
+  width: 84px;
+  text-align: right;
+}
+.formsame label,.formsame span{
+  vertical-align: middle;
+  font-size: 14px;
+}
+.formsame .querySelect {
+  border: 1px solid #8b766c;
+  background: #fff7f3;
+  color: #8b766c;
+}
+.formsame span{
+  font-size: 12px;
+  display: inline-block;
+  width: 70px;
+  height: 23px;
+  text-align: center;
+  line-height: 23px;
+  margin-right: 10px;
+  border: 1px solid #c2c2c2;
+  color: #c2c2c2;
+  cursor: pointer;
+}
+.formsame label {
+    display: inline-block;
+    width: 84px;
+    text-align: right;
+}
+.formsame input {
+    padding: 7px 0 7px 4px;
+    vertical-align: middle;
+}
+.inputNum {
+    width: 310px;
+}
+input {
+    outline: 0;
+    border: 1px solid #afafb0;
+}
+.docPrivacy {
+    color: #d7d7d7;
+    font-size: 12px;
+    margin-left: 340px;
+    line-height: 18px;
+}
+.queryButton {
+  margin-top: 12px;
+  text-align: center;
+}
+.queryBtn2 {
+  font-size: 14px;
+  display: inline-block;
+  height: 32px;
+  width: 198px;
+  line-height: 32px;
+  border: 1px solid #8b766c;
+  color: #8b766c;
+  text-align: center;
+}

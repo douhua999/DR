@@ -1,0 +1,275 @@
+@charset "utf-8";
+#header{
+  margin:20px 0 20px 0;
+}
+.w1000{
+  width:1000px;
+  margin:0 auto;
+}
+.hd_nav{height:75px;}
+.hd_nav .logo img{
+  width:70px;
+  height:70px;
+  vertical-align: middle;
+}
+.hd_nav .logo em{
+  vertical-align: middle;
+  padding-left:12px;
+  color:#888;
+  font-size:12px;
+}
+.hd_nav .nav{margin-top:30px;}
+.hd_nav .nav ul li{
+  float: left;
+  padding-left: 44px;
+  font-weight: bold;
+  line-height: 24px;
+  text-align: center;
+}
+.hd_nav .nav ul li a{
+  color: #666;
+  font-size: 14px;
+}
+.hd_nav .nav ul li a:hover{color: #bf9564;}
+.court_banner{
+  border-top: 2px solid #e5d9d9;
+  height: 580px;
+  background: url(../img/courtship/qrj.jpg) no-repeat center;
+}
+/*main*/
+.main{
+  background-color:#f1f1f1;
+  margin-top:20px;
+}
+.content::after{
+  content:"";
+  display:block;
+  clear:both;
+}
+.w980{
+  width:1000px;
+  margin:0 auto;
+  margin-top: 20px;
+  padding-bottom: 20px;
+}
+.content .main{
+  width: 710px;
+  background: #fff;
+  padding: 20px;
+  clear: both;
+}
+.main .breadcrumb{
+  color: #999;
+  height: 25px;
+  line-height: 25px;
+  border-bottom: 1px #ddd solid;
+  padding-bottom: 30px;
+  margin-bottom: 10px;
+}
+.breadcrumb a{
+  color: #999;
+  margin-right: 6px;
+}
+.m20::after{
+  content:"";
+  display: block;
+  clear: both;
+}
+.mb20 .slider{
+  position: relative;
+  width:350px;
+  margin-right:10px;
+}
+.mb20 .slider_btns{
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+}
+.mb20::after{
+  content:"";
+  display: block;
+  clear:both;
+}
+.mb20 .slider_btns span{
+  display: block;
+  width: 12px;
+  height: 8px;
+  float: left;
+  margin-right: 6px;
+  background: #FFF;
+  color: #FFF;
+  font-size: 0px;
+  cursor: pointer;
+}
+.mb20 .slider img{
+  width:350px;
+  height:257px;
+}
+.headline{width:300px;}
+.headline h2{
+  font-size: 16px;
+  text-align: center;
+  padding: 15px 0;
+  font-family: '微软雅黑';
+}
+.headline h2 a{
+  color:#111;
+  font-size: 16px;
+  font-weight:bold;
+}
+.headline p{
+  color:#999;
+  font-size:12px;
+}
+.hd_related{
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px #ddd dashed;
+}
+.hd_related li{
+  background:url(../img/courtship/dot3.png) no-repeat 0 12px;
+  width: 130px;
+  height: 28px;
+  line-height: 28px;
+  padding-left: 10px;
+  float: left;
+  margin-right: 10px;
+  overflow: hidden;
+}
+.hd_related li a{
+  color: #111;
+}
+
+/*求婚词*/
+.lovemaking{
+  margin:30px 0 30px 0;
+  width: 650px;
+  padding-bottom:15px;
+  border-bottom: 1px dashed #BBB;
+}
+.lovemaking::after{
+  content:"";
+  display:block;
+  clear: both;
+}
+.lovemaking h3{
+  font-size: 16px;
+  height: 30px;
+  line-height: 16px;
+  margin:10px 0 10px 0;  
+}
+.lovemaking h3 a{padding-left: 12px; border-left: 3px #C60 solid;color: #111;font-size:16px;font-weight:bold;}
+.parts{width:310px;margin-right:15px;}
+.parts img{width: 120px;height: 88px;float:left;}
+.partr{
+  width:180px;
+  float:right;
+  text-align: left;
+  padding-left:10px;
+}
+.partr .p1{
+  line-height: 21px;
+  color:#111;
+  font-size:12px;
+}
+.p_top::after{
+  content:"";
+  display:block;
+  clear:both;
+}
+.partr .p2{
+  line-height:21px;
+  color:rgb(73, 68, 68);
+  font-size:12px;
+}
+.p_bot{
+  clear:both;
+  margin-top:10px;
+}
+.p_bot li{
+  position: relative;
+  width: 310px;
+  height: 22px;
+  margin-right: 20px;
+}
+.p_bot li a{color:#111;}
+.p_bot li span{
+  position: absolute;
+  top: 4px;
+  right: 0;
+  color: #999;
+  width: 75px;
+  background: #FFF;
+  text-align: right;
+  font-size:12px;
+}
+/*右侧*/
+.sidebar{width:270px;padding-top:20px;}
+.sidebar .hot_img,.sidebar .hot_txt,.hot_pic{
+  padding: 10px;
+  margin-bottom: 10px;
+  background: #fff;
+}
+.hot_img h3,.hot_txt h3,.hot_pic h3{
+  font-size: 16px;
+  height: 16px;
+  line-height: 16px;
+  margin: 10px 0;
+  font-weight: bold;
+}
+.sidebar .hot_txt ul{
+  background:url(../img/courtship/hot-t.png) no-repeat 0 7px;
+}
+.sidebar .hot_txt ul li{
+  height: 30px;
+  line-height: 30px;
+  padding-left: 30px;
+}
+.sidebar .hot_txt ul li a{color: #666;}
+.hot_pic ul::after{
+  content:"";
+  display:block;
+  clear:both;
+}
+.hot_pic ul li{float:left;margin-bottom:10px;}
+.hot_pic ul .mar{margin-right:10px}
+.hot_pic ul li a{
+  display:block;
+  width:120px;
+  margin-top:5px;
+  color:#111;
+  line-height:18px;
+}
+/*footer*/
+#footer{
+  width:100%;  
+  border-top: 1px solid #ccc;
+  border-bottom: 1px #ccc solid;
+}
+
+#footer .foot_top ul+ul{
+  margin-left:97px;
+}
+.foot_top{
+  padding:30px 0;
+  
+}
+.foot_top::after{
+  content:"";
+  display:block;
+  clear: both;
+}
+.foot_top ul{
+  float:left;
+  font-weight: bold;
+  font-size:14px;
+}
+.foot_top ul li{
+  font-weight: normal;
+}
+footer{padding-bottom:15px;}
+footer p{
+  text-align: center;
+  font-size:14px;
+  margin-top:15px;
+}
