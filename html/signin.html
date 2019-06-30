@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="../css/common.css">
+  <link rel="stylesheet" href="../css/signin.css">
+</head>
+<body>
+  <!--头部-->
+  <header id="w1360">
+      <!--左边Logo-->  
+      <div class="dr_fl">
+        <a href="#">
+          <img src="../img/logo_1.png" alt="">
+        </a>
+      </div>
+      <!--右边文字导航-->
+      <div class="dr_fr">
+        <ul>
+          <li class="fr_first"><a href="#">登录/注册</a></li>
+          <li class="fr_second">
+            <img src="../img/phone.png" alt="">
+            <a href="#">400 01 13520</a>
+            </li>
+          <li class="fr_third">
+            <a href="#">帮助中心
+              <img src="../img/bread_right.png" alt="">
+            </a></li>
+        </ul>
+      </div>
+  </header> 
+  <!--banner-->
+  <div class="dr_banner">
+    <img src="../img/login_bg.jpg" alt="">
+    <div class="dr_card">
+      <form action="">
+        <h3>注册/登录</h3>
+        <div class="signin_box">
+          <div class="vali_info">
+						手机号码不能为空!
+					</div>
+          <input type="text" class="iptxt" name="userphone" placeholder="请输入您的手机号码">
+          <input type="text" class="iptxt inputCode" name="useryz" placeholder="请输入验证码">
+          <div class="vali_info">
+              6位数字！
+            </div>
+          <a href="javascript:;" class="getCodebtn">获取短信验证码</a>
+          <p style="clear:both;" class="dr_action">
+            使用
+            <a href="javascript:;">密码登录</a>
+            <i>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;</i>
+            <a href="javascript:;">获取语音验证码</a>
+          </p>
+          <!--注册协议-->
+          <div class="checkitems">
+            <input type="checkbox" class="phonecheck" checked="checked">
+            <label for="phonecheck">同意Darry Ring用户注册协议和隐私协议</label> 
+          </div>
+          <!--常规登录-->
+          <div class="dr_login">
+            <a href="javascript:;" class="log_btn">登录</a>
+            <!--表示执行一条什么也不干的javascript语句-->
+          </div>
+        </div>
+        <!--其它登录-->
+        <div class="otherLogin">
+          <h4>第三方账户登录</h4>
+          <a class="qq" href="#" target="_blank"></a>
+          <a class="wx" href="#" target="_blank"></a>
+          <a class="wb" href="#" target="_blank"></a>
+          <a class="zf" href="#" target="_blank"></a>
+        </div>
+      </form>
+    </div>
+  </div>
+  <div>
+    <iframe src="footer.html" frameborder="0" id="footer" scrolling="no"></iframe>
+  </div>
+<!--footer-->
+<footer id="footer" class="container"></footer>
+
+<script src="../js/jquery-1.11.3.js"></script>
+<script>
+    //1.查找触发事件的元素
+      var txtPhone=document.getElementsByName("userphone")[0];
+      //var txtYz=document.getElementsByName("useryz")[0];
+      //console.log(txtPhone);
+      //console.log(txtYz);
+    //2.绑定事件处理函数
+      //获得焦点时
+      txtPhone.onfocus=function(){
+        var input=this;
+        var div=input.previousElementSibling;
+        //清除div的class,让div显示出来
+        div.className="";
+      }
+      //失去焦点时
+      txtPhone.onblur=function(){
+        //3.查找要修改的元素
+        var input=this;
+        //查找当前文本框旁边的div
+        var div=input.previousElementSibling;
+        //4.修改
+        var reg=/^1[3-9]\d{9}$/;
+        //如果验证input的内容通过
+        if(reg.test(input.value)==true){
+          div.className="vali_success";
+        }else{
+				  //失败
+			  	div.className="vali_fail";
+			  }
+      }
+</script>
+<script src="../js/footer.js"></script>
+</body>
+</html>

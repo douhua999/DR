@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="../css/common.css">
+  <link rel="stylesheet" href="../css/real_love.css">
+  <link rel="stylesheet" href="../css/calculate.css">
+  <script src="../js/jquery.min.js"></script>
+  <script src="../js/laydate.js"></script>
+</head>
+<body>
+   <!--header-->
+   <header id="header" class="container">
+   </header>
+   <!--白色底面包屑-->
+   <div class="dr_bread w1360">
+      <div class="bread_nav">
+        <a href="javascript:;" target="_self">DR</a>
+        <span>></span>
+        <span class="s1">预约进店</span>
+      </div>
+   </div>
+   <!--白色底面包屑end-->
+   <div class="shopmain">
+     <!--预约以及店铺-->
+     <div class="shop_box">
+       <!--预约左边-->
+       <div class="shop_img fl">
+         <a href="">
+           <img src="../img/culture/shop_img.jpg" alt="">
+         </a>
+       </div>
+       <!--预约右边文本-->
+       <div class="shop_right fr">
+          <div class="shopbx">
+            <div class="shop_first">
+                <div class="shop_choose">
+                    <select id="province_shop" class="province_shop fl" name="provinces">
+                        <option value="0" selected="selected">请选择城市</option>
+                        <option value="3735">巴黎</option>
+                        <option value="33">香  港</option>
+                        <option value="1">北京市</option>
+                        <option value="2">天津市</option>
+                        <option value="3">河北省</option>
+                        <option value="4">山西省</option>
+                        <option value="5">内蒙古自治区</option>
+                        <option value="6">辽宁省</option>
+                        <option value="7">吉林省</option>
+                        <option value="8">黑龙江</option>
+                        <option value="9">上海市</option>
+                        <option value="10">江苏省</option>
+                        <option value="11">浙江省</option>
+                        <option value="12">安徽省</option>
+                        <option value="13">福建省</option>
+                        <option value="14">江西省</option>
+                        <option value="15">山东省</option>
+                        <option value="16">河南省</option>
+                        <option value="17">湖北省</option>
+                        <option value="18">湖南省</option>
+                        <option value="19">广东省</option>
+                        <option value="20">广西壮族自治区</option>
+                        <option value="21">海南省</option>
+                        <option value="22">重庆市</option>
+                        <option value="23">四川省</option>
+                        <option value="24">贵州省</option>
+                        <option value="25">云南省</option>
+                        <option value="26">西藏自治区</option>
+                        <option value="27">陕西省</option>
+                        <option value="28">甘肃省</option>
+                        <option value="29">青海省</option>
+                        <option value="30">宁夏回族自治区</option>
+                        <option value="31">新疆维吾尔自治区</option>
+                    </select>
+                    <select name="cities" class="hide fl">
+                        <option value="">请选择店铺</option>
+                    </select>
+                </div>
+            </div>
+            <div class="shop_third same">
+                <input type="text" id="txtname" placeholder="预约人姓名" class="manName" name="yy_name">
+                <strong>必填</strong>
+            </div>
+            <div class="shop_five same">
+                <input type="text" id="txtphone" placeholder="预约人手机号码" class="manPhone" name="yy_phone">
+                <strong>必填</strong>
+            </div>
+            <div class="shop_sec same">
+                <input type="text" id="laydateInput" placeholder="请选择到店时间" class="time_date">
+                <div class="select-date">
+                  <div class="select-date-header">
+                    <ul class="heade-ul">
+                      <li class="header-item header-item-one">
+                        <select name="" id="yearList"></select>
+                      </li>
+                      <li class="header-item header-item-two" onselectstart="return false">
+                        <select name="" id="monthList"></select>
+                      </li>
+                      <li class="header-item header-item-three" onselectstart="return false" >
+                        <span class="reback">回到今天</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="select-date-body">
+                    <ul class="week-list">
+                      <li>日</li><li>一</li><li>二</li><li>三</li><li>四</li><li>五</li><li>六</li>
+                    </ul>
+                    <ul class="day-tabel"></ul>
+                  </div>
+                </div>
+            </div>
+            <input type="text" class="shopButton" value="确认预约" onclick="check_naph()"> 
+            <p class="click_p1">*请填写完整的信息</p>
+            <p class="shoporder_tips">如您在预约过程中遇到任何问题<br>
+                请致电400-01-13520或在线咨询客服</p>
+          </div>
+       </div>
+     </div>
+   </div>
+<!--footer-->
+<footer id="footer" class="container">
+</footer> 
+<!--右侧固定栏-->
+<div class="dr_quickservice">
+    <!--在线客服-->
+    <div class="kf_droline">
+      <!--客服提示信息-->
+     
+      <img src="../img/zxkf.gif" alt="">
+      <span>
+              在线<br>客服
+      </span>
+      <em class="yleft"></em>
+      <em class="yright"></em>
+    </div> 
+    <div class="online_word">
+          <span class="close"></span>
+          <p style="width: 220px; height:60px;">想了解更多钻石知识<br>我们有专业在线客服给您解答</p>
+      </div>
+    <!--预约-->
+    <div class="quick_cort">
+       <a href="real_love.html" target="_blank" class="drdate"></a> 
+       <p>预约</p>
+    </div>
+    <div class="drdate_word">预约</div>
+    <!--购物车-->
+    <div class="quick_cort1">
+      <a href="signin.html" target="_blank" class="shopping_car"></a> 
+      <p>购物车</p>
+    </div>
+    <div class="drdate_word1">购物车</div>
+    <!--订单-->
+    <div class="quick_cort2">
+      <a href="signin.html" target="_blank" class="order"></a> 
+      <p>订单</p>
+    </div>
+    <div class="drdate_word2">订单</div>
+    <!--收藏-->
+    <div class="quick_cort3">
+      <a href="signin.html" target="_blank" class="collect"></a> 
+      <p>收藏</p>
+    </div>
+    <div class="drdate_word3">收藏</div>
+    <!--新人礼-->
+    <div class="quick_cort4">
+      <a href="javascript:;" target="_blank" class="new_gift"></a> 
+      <p>新人礼</p>
+    </div>
+    <div class="drdate_word4">新人礼</div>
+    <!--手机端-->
+    <div class="quick_cort5">
+      <a href="javascript:;" target="_blank" class="cellphone"></a> 
+      <p>手机端</p>
+    </div>
+    <div class="drdate_word5">手机端</div>
+    <!--返回顶部-->
+    <div class="to_topview" onclick="toTop()">
+      <a href="javascript:;" target="_blank" class="back" style="display:none;"></a>
+      <p>返回顶部</p>
+    </div>  
+</div>
+<!--新人礼弹窗-->
+<div id="gray"></div>
+<div class="newgift" id="newgift">
+  <div class="top_nav" id='top_nav' align="center">
+      <span>新人礼</span>
+      <a class="guanbi"></a>
+  </div>
+  <div class="tc_login" align="center">
+      <img src="../img/gift1.gif"/>	
+  </div>
+  <p class="new_p01" align="center">爱不久等，快快注册，领取新人专享礼包吧！</p>
+  <div class="btn-box" align="center">
+      <a href="signin.html">立即注册获取</a>
+  </div>
+</div>
+<!--客服弹窗-->
+<div class="dr_tk">
+    <span class="close"></span>
+    <ul class="dr_tkborder">
+        <li class="drsq_left">
+            <a href=""></a>
+            <span class="drdz">定制咨询</span>
+            <p>
+              <i>商品选购</i>
+              <i>活动资讯</i>
+              <i>协助下单</i>
+            </p>
+        </li>
+        <li class="drsq_left drkf_sh">
+              <a href=""></a>
+              <span class="drsh">定制咨询</span>
+              <p>
+                <i>商品选购</i>
+                <i>活动资讯</i>
+                <i>协助下单</i>
+              </p>
+        </li>
+        <li class="drkf">
+            <span class="drkjfw">快捷服务</span>
+            <div class="dr_type">
+                <span>类型：</span>
+                <i class="typeclicked">定制</i>
+                <i data="2" class="clicked">售后</i>
+            </div>
+            <p class="dr_tips" style="display:none;">*</p>
+            <input name="gr_tel" type="text" placeholder="预约人手机号" class="drkf_num">
+            <input type="text" class="dr_sub" value="提交" onclick="check()"> 
+            <a href="" class="drhelp">帮助中心</a>
+        </li>
+    </ul>
+</div>
+<script src="../js/jquery-1.11.3.js"></script>
+<script src="../js/header.js"></script>
+<script>
+    function getSelectDate(result){
+      //这里获取选择的日期
+      console.log(result);
+    }
+</script>
+<script src="../js/select_options.js"></script> 
+<script src="../js/cul_yz.js"></script>
+<script src="../js/footer.js"></script>
+<!--右侧固定栏-->
+<script src="../js/dr.js"></script>
+<script src="../js/kftk.js"></script>
+<script src="../js/clikf.js"></script>
+<script src="../js/drxrl.js"></script>
+<!--返回顶部-->
+<script>
+  function toTop() {
+    $('html,body').animate({
+      scrollTop: 0
+    }, 500)
+    }
+</script>
+</body>
+</html>
