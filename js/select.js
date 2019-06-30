@@ -1,0 +1,147 @@
+   /*实现“省”和“市”的级联下拉列表*/
+   var cities=[
+    [{"name":'巴黎',"value":3736}],
+    [{"name":'香港',"value":3738}],
+    [{"name":'北京',"value":35}],
+    [{"name":'天津',"value":393}],
+    [{"name":'石家庄市',"value":36},
+     {"name":'唐山市',"value":37},
+     {"name":'邢台市',"value":40},
+     {"name":'保定市',"value":41},
+     {"name":'沧州区',"value":44}],
+    [{"name":'太原',"value":47}],
+    [{"name":'呼和浩特市',"value":301},
+     {"name":'包头市',"value":302},
+     {"name":'赤峰市',"value":303},
+     {"name":'鄂尔多斯市',"value":304}],
+    [{"name":'沈阳市',"value":70},
+     {"name":'大连市',"value":71},
+     {"name":'鞍山市',"value":72},
+     {"name":'抚顺市',"value":73},
+     {"name":'锦州市',"value":76},
+     {"name":'盘锦市',"value":80}],
+     [{"name":'长春市',"value":84},
+     {"name":'吉林市',"value":85}],
+     [{"name":'哈尔滨市',"value":93},
+     {"name":'大庆市',"value":98}],
+     [{"name":'上海',"value":35}],
+     [{"name":'南京市',"value":108},
+     {"name":'无锡市',"value":109},
+     {"name":'徐州市',"value":110},
+     {"name":'常州市',"value":111},
+     {"name":'苏州市',"value":112},
+     {"name":'南通市',"value":113},
+     {"name":'盐城市',"value":116},
+     {"name":'扬州市',"value":117},
+     {"name":'镇江市',"value":118}],
+     [{"name":'杭州市',"value":121},
+     {"name":'宁波市',"value":122},
+     {"name":'温州市',"value":123},
+     {"name":'嘉兴市',"value":124},
+     {"name":'绍兴市',"value":126},
+     {"name":'金华市',"value":127},
+     {"name":'衢州市',"value":128},
+     {"name":'舟山市',"value":129},
+     {"name":'台州市',"value":130}],
+     [{"name":'合肥市',"value":132},
+     {"name":'芜湖市',"value":133},
+     {"name":'蚌埠市',"value":134},
+     {"name":'淮南市',"value":135},
+     {"name":'马鞍山市',"value":136}],
+     [{"name":'福州市',"value":149},
+     {"name":'厦门市',"value":150},
+     {"name":'莆田市',"value":151},
+     {"name":'泉州市',"value":153}],
+     [{"name":'南昌市',"value":158},
+     {"name":'九江市',"value":161},
+     {"name":'赣州市',"value":164}],
+     [{"name":'济南市',"value":169},
+     {"name":'青岛市',"value":170},
+     {"name":'淄博市',"value":171},
+     {"name":'东营市',"value":173},
+     {"name":'烟台市',"value":174},
+     {"name":'潍坊市',"value":175},
+     {"name":'济宁市',"value":176},
+     {"name":'临沂市',"value":181},
+     {"name":'滨州市',"value":184}],
+     [{"name":'郑州市',"value":186},
+     {"name":'开封市',"value":187},
+     {"name":'洛阳市',"value":188},
+     {"name":'平顶山市',"value":189},
+     {"name":'安阳市',"value":190},
+     {"name":'许昌市',"value":195},
+     {"name":'商丘市',"value":199},
+     {"name":'周口市',"value":200}],
+     [{"name":'武汉市',"value":203},
+     {"name":'宜昌市',"value":206},
+     {"name":'襄阳市',"value":207},
+     {"name":'孝感市',"value":210}],
+     [{"name":'长沙市',"value":217},
+     {"name":'湘潭市',"value":219},
+     {"name":'衡阳市',"value":220},
+     {"name":'岳阳市',"value":222},
+     {"name":'常德市',"value":223}],
+     [{"name":'广州市',"value":231},
+     {"name":'深圳市',"value":233},
+     {"name":'佛山市',"value":236},
+     {"name":'江门市',"value":237},
+     {"name":'湛江市',"value":238},
+     {"name":'惠州市',"value":241},
+     {"name":'东莞市',"value":247},
+     {"name":'中山市',"value":248}],
+     [{"name":'南宁市',"value":252},
+     {"name":'柳州市',"value":253},
+     {"name":'桂林市',"value":254}],
+     [{"name":'海口',"value":266}],
+     [{"name":'重庆',"value":270}],
+     [{"name":'成都市',"value":272},
+     {"name":'泸州市',"value":275},
+     {"name":'南充市',"value":282}],
+     [{"name":'贵阳市',"value":293},
+     {"name":'遵义市',"value":295}],
+     [{"name":'昆明市',"value":302}],
+     [{"name":'西安市',"value":325},
+     {"name":'宝鸡市',"value":327},
+     {"name":'咸阳市',"value":328}],
+     [{"name":'兰州市',"value":335}],
+     [{"name":'西宁市',"value":349}],
+     [{"name":'银川市',"value":357}],
+     [{"name":'乌鲁木齐市',"value":362}]
+];
+//1.查找触发事件元素 name=“provs"
+var sleProvs=document.getElementsByName("provs")[0];
+var selCts=document.getElementsByName("cities")[0];
+//console.log(sleProvs);
+//绑定事件处理函数 当selprovs的选中项改变时
+sleProvs.onclick=function(){
+  var sleProvs=this;
+  //获得当前选中项的下标位置  :selectedIndex
+  var i=sleProvs.selectedIndex;
+  //console.log(i);
+  //除非选中的不是第一项,请选择时，才
+  if(i>0){
+    //获得当前省份对应的城市列表子数组
+    var cts=cities[i-1];
+    //console.log(cts);
+    //将子数组中的城市转为option加入到第二个select中
+    //因为第二个select已经在页面上了，所以要添加多个平级option，应该先放在文档片段中
+    var frag=document.createDocumentFragment();
+    frag.appendChild(
+      new Option("请选择城市"));
+    //遍历子数组中每个城市对象
+    for(var c of cts){
+      frag.appendChild(new Option(c.name,c.value));
+      //console.log(c.value);
+    }
+    //将整个文档片段加入第二个select中
+    //坑：在追加新option之前，应该先删除旧的所有option(清除selCts的内容)
+    //selCts.innerHTML="";
+    selCts.length=0;
+    selCts.appendChild(frag);
+    //将select显示出来（清除class)
+    selCts.className="";
+    selCts.className="c_select";
+  }else{
+    selCts.className="c_select";
+  }
+}
